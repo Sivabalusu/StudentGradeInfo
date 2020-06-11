@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navInsert"
+        android:icon="@drawable/ic_insert"
+        android:title="Grade Entry">
+    </item>
+    <item
+        android:id="@+id/navView1"
+        android:icon="@drawable/ic_view"
+        android:title="View Grades">
+    </item>
+    <item
+        android:id="@+id/navSearch"
+        android:icon="@drawable/icon_search"
+        android:title="Search">
+    </item>
+    <item
+        android:id="@+id/navUpdate"
+        android:icon="@drawable/ic_update"
+        android:title="Update">
+    </item>
+    <item
+        android:id="@+id/navDelete"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete">
+    </item>
+
+</menu>

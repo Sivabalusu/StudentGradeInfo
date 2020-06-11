@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DeleteFragment">
+
+    <!-- TODO: Fragment layout used to delete records -->
+    <LinearLayout
+        android:id="@+id/deleteLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDlHeader"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Enter Student ID to Delete"
+                    android:textColor="#1a1a1a"
+                    android:textSize="22sp">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left"
+                        android:text="Enter ID"
+                        android:textColor="#1a1a1a"
+                        android:textSize="20sp"
+                        android:id="@+id/tvDlId">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="198dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:hint="ID"
+                        android:id="@+id/etDlId">
+
+                    </EditText>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btndGet"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#33cc33"
+                    android:text="Get Data"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp">
+
+                </Button>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="15dp"
+            android:id="@+id/delData"
+            android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/delData1"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvDelEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:text="Record details"
+                        android:textColor="#1a1a1a"
+                        android:textSize="20sp">
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:text="First Name"
+                            android:textColor="#1a1a1a"
+                            android:textSize="20sp"
+                            android:id="@+id/tvFirstName">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="198dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:id="@+id/tvdFirstName">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:text="Last Name"
+                            android:textColor="#1a1a1a"
+                            android:textSize="20sp"
+                            android:id="@+id/tvLastName">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="198dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:id="@+id/tvdLastName">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Marks"
+                            android:textColor="#1a1a1a"
+                            android:textSize="20sp"
+                            android:id="@+id/tvMarks">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="198dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:id="@+id/tvdMarks">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Program Code"
+                            android:textColor="#1a1a1a"
+                            android:textSize="20sp"
+                            android:id="@+id/tvprog">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="198dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:id="@+id/tvdProg">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Credits"
+                            android:textColor="#1a1a1a"
+                            android:textSize="20sp"
+                            android:id="@+id/tvCredi">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="198dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:id="@+id/tvdCredit">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnDelete"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#33cc33"
+                        android:text="DELETE"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+                    </Button>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+</FrameLayout>
